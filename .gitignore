@@ -38,3 +38,8 @@ out
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
+
+# Frontend
+node_modules
+build
+.happypack
