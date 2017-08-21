@@ -22,6 +22,7 @@ module.exports = function (app) {
 
     app.use(express.static(path.join(rootPath, '.tmp')));
     app.use(express.static(path.join(rootPath, '/frontend/build')));
+    app.use(express.static(path.join(rootPath, '/frontend/styles')));
     app.set('views', rootPath + '/frontend/views');
 
     app.engine('html', require('ejs').renderFile);

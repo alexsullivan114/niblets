@@ -43,3 +43,4 @@ atlassian-ide-plugin.xml
 node_modules
 build
 .happypack
+npm-debug.log

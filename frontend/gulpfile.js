@@ -3,11 +3,11 @@ const less = require('gulp-less');
 const path = require('path');
 
 gulp.task('less', function () {
-  return gulp.src('./styles/**/*.less')
+    return gulp.src('./styles/**/*.less')
     .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
+        paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(gulp.dest('./build/css'));
+    .pipe(gulp.dest('./build/styles'));
 });
 
 gulp.task('watch', function() {
