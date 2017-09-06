@@ -1,0 +1,27 @@
+.post {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    .post-header {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 8px;
+
+        & > * {
+            flex: auto;
+        }
+    }
+
+    .post-author {
+        text-align: right;
+        color: #aaa;
+    }
+
+    .post-text {
+        margin-bottom: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
