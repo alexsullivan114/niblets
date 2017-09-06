@@ -5,7 +5,7 @@ import com.box.sdk.BoxFolder
 
 class BoxRepository {
     fun rootFolder(): BoxFolder {
-        val api = BoxAPIConnection("XnLarjmXIbr1SgenZBFnmxeXxsEzReSV")
+        val api = BoxAPIConnection("")
         return BoxFolder.getRootFolder(api)
     }
 }
