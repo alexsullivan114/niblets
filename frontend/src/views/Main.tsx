@@ -5,17 +5,19 @@ import {BrowserRouter as Router, Route, Link, Redirect, Switch} from 'react-rout
 import {store} from '../redux/store';
 
 import {ConnectedHomeView} from './Home';
+import {ConnectedApiView} from './Api';
 
 export class MainView extends React.Component<{}, {}> {
     render() {
         return (
-        <div className="container">
-            <Provider store={store}>
-                <Router>
-                    <Route exact path="" component={ConnectedHomeView}/>
-                </Router>
-            </Provider>
-        </div>
+        <Provider store={store}>
+            <Router>
+                <div className="container">
+                    <Route exact path="/" component={ConnectedHomeView}/>
+                    <Route path="/api" component={ConnectedApiView}/>
+                </div>
+            </Router>
+        </Provider>
         );
     }
 }
