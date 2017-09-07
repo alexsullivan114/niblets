@@ -10,6 +10,6 @@ gulp.task('less', function () {
     .pipe(gulp.dest('./build/styles'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', ['less'], function() {
 	gulp.watch('./styles/**/*.less', ['less']);
 });
